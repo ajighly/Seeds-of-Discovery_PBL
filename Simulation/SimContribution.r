@@ -11,7 +11,7 @@ MYFULL1=17
 MYFULL2=125
 
 for (j in 1:700) {
-	Data=fread(pMYFULL6e("../Selection/Tab_Short_Chr1_Rep-",j,"_GenerationNo-10000_out.txt",sep=''))
+	Data=fread(paste("../Selection/Tab_Short_Chr1_Rep-",j,"_GenerationNo-10000_out.txt",sep=''))
 	Data=as.matrix(Data)
 	MYFULL3=matrix(0, nrow=(MYFULL+MYFULL1)*2, ncol=30000)
 	MYFULL4=sample(500,MYFULL)
